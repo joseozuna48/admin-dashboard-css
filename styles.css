@@ -66,3 +66,46 @@ body{
     gap:1rem;
     margin: 3rem 0;
 }
+
+.right-section{
+    padding:1rem
+}
+
+.search_and_info{
+    display: grid;
+    gap: 3rem;
+}
+
+.search_section{
+    display:grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    gap: 2rem;
+}
+ .info_section{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+ }
+
+.info_section .button-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+
+.project-section{
+    padding: 2rem;
+}
+
+.announcements-section{
+    padding:2rem;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1.5rem;
+}
