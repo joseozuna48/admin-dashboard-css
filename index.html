@@ -1,233 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="styles.css">
-    <title>Admin Dashboard</title>
-  </head>
-  <body>
-    <aside class="sidebar">
-      <div class="logo_section">
-        <i><img src="/assets/logo.svg" width='20px' height="20px" ></i><p>Dashboard</p>
-      </div>
-      <nav>
-        <a href="">
-          <i><img src="/assets/home.svg" width='20px' height="20px" ></i> <p>Home</p>
-        </a>
-        <a href="">
-        <i><img src="/assets/profile.svg" width='20px' height="20px" ></i> <p>Profile</p> 
-        </a>
-        <a href="">
-        <i><img src="/assets/message.svg" width='20px' height="20px" ></i><p>Messages</p>  
-        </a>
-        <a href="">
-         <i><img src="/assets/history.svg" width='20px' height="20px" ></i><p>History</p>
-        </a>
-        <a href="">
-          <i><img src="/assets/tasks.svg" width='20px' height="20px" ></i><p>Tasks</p>
-        </a>
-        <a href="">
-          <i><img src="/assets/communities.svg" width='20px' height="20px" ></i><p>Communities</p>
-        </a>
-      </nav>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 
-      <nav>
-        <a href="">
-          <i><img src="/assets/settings.svg" width='20px' height="20px" ></i><p>Settings</p>
-        </a>
-        <a href="">
-          <i><img src="/assets/support.svg" width='20px' height="20px" ></i><p>Support</p>
-        </a>
-        <a href="">
-          <i><img src="/assets/privacy.svg" width='20px' height="20px" ></i><p>Privacy</p>
-        </a>
-      </nav>
-    </aside>
+  <link rel="stylesheet" href="styles.css">
+  <title>Admin Dashboard</title>
+</head>
 
-    <div class="right-section">
-      <div class="search_and_info">
-        <div class="search_section">
+<body>
+  <aside class="sidebar">
+    <div class="logo_section">
+      <i><img src="/assets/logo.svg" width='20px' height="20px"></i>
+      <p>Dashboard</p>
+    </div>
+    <nav>
+      <a href="">
+        <i><img src="/assets/home.svg" width='20px' height="20px"></i>
+        <p>Home</p>
+      </a>
+      <a href="">
+        <i><img src="/assets/profile.svg" width='20px' height="20px"></i>
+        <p>Profile</p>
+      </a>
+      <a href="">
+        <i><img src="/assets/message.svg" width='20px' height="20px"></i>
+        <p>Messages</p>
+      </a>
+      <a href="">
+        <i><img src="/assets/history.svg" width='20px' height="20px"></i>
+        <p>History</p>
+      </a>
+      <a href="">
+        <i><img src="/assets/tasks.svg" width='20px' height="20px"></i>
+        <p>Tasks</p>
+      </a>
+      <a href="">
+        <i><img src="/assets/communities.svg" width='20px' height="20px"></i>
+        <p>Communities</p>
+      </a>
+    </nav>
+
+    <nav>
+      <a href="">
+        <i><img src="/assets/settings.svg" width='20px' height="20px"></i>
+        <p>Settings</p>
+      </a>
+      <a href="">
+        <i><img src="/assets/support.svg" width='20px' height="20px"></i>
+        <p>Support</p>
+      </a>
+      <a href="">
+        <i><img src="/assets/privacy.svg" width='20px' height="20px"></i>
+        <p>Privacy</p>
+      </a>
+    </nav>
+  </aside>
+
+  <div class="right-section">
+    <div class="search_and_info">
+      <div class="search-and-profile">
+        <form class="search-section">
+          <button type="submit"> <img src="/assets/search.svg"> </button>
           <input type="text" name="search" id="searchBar" />
-          <div>Notification</div>
-          <div>Morgan Oakley</div>
-        </div>
-
-        <div class="info_section">
-          <div>Hi there, Morgan Oakley</div>
-          <div class="button-section">
-            <button type="button">New</button>
-            <button type="button">Upload</button>
-            <button type="button">Share</button>
+        </form>
+        <div class="profile-section">
+          <div class="bell"><img src="/assets/bell.svg" alt=""></div>
+          <div class="profile-btn">
+            <img src="/assets/panda.jpg">
+            <p>Morgan Oakley</p>
           </div>
         </div>
       </div>
 
+      <div class="info_section">
+        <div class="greeting-section">
+          <img src="/assets/panda.jpg">
+          <p>Hi there,<br><span>Morgan Oakley @Morgan</span></p>
+        </div>
+        <div class="button-section">
+          <button type="button">New</button>
+          <button type="button">Upload</button>
+          <button type="button">Share</button>
+        </div>
+      </div>
+    </div>
 
-      <main>
-        <div class="project-section">
-          <h2>Your Projects</h2>
-          <div  class="cards-container">
-            <div class="card">
-              <p class="title">Super Cool Project</p>
-              <p class="text">
-                Dolor duis non ad ut excepteur occaecat amet ad aliquip dolore
-                ut. Do excepteur enim laboris quis nulla fugiat dolore in velit
-                pariatur non. Esse exercitation nisi quis id. Sunt ullamco
-                aliqua proident laborum excepteur.
-              </p>
-              <div class="card-btns">
-                <a><img src="/assets/favorite.svg" alt=""></a>
-                <a><img src="/assets/watch.svg" alt=""></a>
-                <a><img src="/assets/share.svg" alt=""></a>
-              </div>
+
+    <main>
+      <div class="project-section">
+        <h2>Your Projects</h2>
+        <div class="cards-container">
+          <div class="card">
+            <p class="title">Super Cool Project</p>
+            <p class="text">
+              Dolor duis non ad ut excepteur occaecat amet ad aliquip dolore
+              ut. Do excepteur enim laboris quis nulla fugiat dolore in velit
+              pariatur non. Esse exercitation nisi quis id. Sunt ullamco
+              aliqua proident laborum excepteur.
+            </p>
+            <div class="card-btns">
+              <a><img src="/assets/favorite.svg" alt=""></a>
+              <a><img src="/assets/watch.svg" alt=""></a>
+              <a><img src="/assets/share.svg" alt=""></a>
             </div>
-            <div class="card">
-              <p class="title">Less cool Project</p>
-              <p class="text">
-                Qui duis pariatur dolore Lorem consequat. Ad do officia
-                voluptate ex sunt fugiat. Cillum occaecat officia nulla eu.
-                Consequat do deserunt aliquip ea eu est pariatur cupidatat minim
-                ea consequat commodo. Non cillum non irure consequat ad ullamco
-                aliquip ipsum irure consequat et cillum anim et. Occaecat quis
-                reprehenderit pariatur ex ea proident.
-              </p>
-              <div class="card-btns">
-                <a><img src="/assets/favorite.svg" alt=""></a>
-                <a><img src="/assets/watch.svg" alt=""></a>
-                <a><img src="/assets/share.svg" alt=""></a>
-              </div>
-
+          </div>
+          <div class="card">
+            <p class="title">Less cool Project</p>
+            <p class="text">
+              Qui duis pariatur dolore Lorem consequat. Ad do officia
+              voluptate ex sunt fugiat. Cillum occaecat officia nulla eu.
+              Consequat do deserunt aliquip ea eu est pariatur cupidatat minim
+              ea consequat commodo. Non cillum non irure consequat ad ullamco
+              aliquip ipsum irure consequat et cillum anim et. Occaecat quis
+              reprehenderit pariatur ex ea proident.
+            </p>
+            <div class="card-btns">
+              <a><img src="/assets/favorite.svg" alt=""></a>
+              <a><img src="/assets/watch.svg" alt=""></a>
+              <a><img src="/assets/share.svg" alt=""></a>
             </div>
-            <div class="card">
-              <p class="title">Impossible App</p>
-              <p class="text">
-                Tempor commodo occaecat nostrud magna. Minim ipsum pariatur
-                fugiat reprehenderit mollit nostrud amet cillum labore sunt ea
-                cupidatat sit. Nisi dolor ipsum deserunt labore in magna ut
-                occaecat voluptate. Consequat do magna anim ex deserunt minim
-                esse.
-              </p>
-              <div class="card-btns">
-                <a><img src="/assets/favorite.svg" alt=""></a>
-                <a><img src="/assets/watch.svg" alt=""></a>
-                <a><img src="/assets/share.svg" alt=""></a>
-              </div>
 
-
+          </div>
+          <div class="card">
+            <p class="title">Impossible App</p>
+            <p class="text">
+              Tempor commodo occaecat nostrud magna. Minim ipsum pariatur
+              fugiat reprehenderit mollit nostrud amet cillum labore sunt ea
+              cupidatat sit. Nisi dolor ipsum deserunt labore in magna ut
+              occaecat voluptate. Consequat do magna anim ex deserunt minim
+              esse.
+            </p>
+            <div class="card-btns">
+              <a><img src="/assets/favorite.svg" alt=""></a>
+              <a><img src="/assets/watch.svg" alt=""></a>
+              <a><img src="/assets/share.svg" alt=""></a>
             </div>
-            <div class="card">
-              <p class="title">Easy Peasy App</p>
-              <p class="text">
-                Nulla dolore dolor ea consectetur velit est et dolor nostrud
-                enim eiusmod. Officia amet aliqua adipisicing consequat officia.
-                Ad consectetur excepteur id anim. Non reprehenderit eu elit
-                tempor eiusmod laboris excepteur mollit amet do anim anim est.
-                Velit pariatur ut enim pariatur consectetur cupidatat cupidatat
-                anim duis anim. Et irure anim mollit veniam ad pariatur fugiat
-                qui mollit reprehenderit ad. Et velit et ad sit tempor amet
-                irure adipisicing laboris pariatur reprehenderit cillum.
-              </p>
-              <div class="card-btns">
-                <a><img src="/assets/favorite.svg" alt=""></a>
-                <a><img src="/assets/watch.svg" alt=""></a>
-                <a><img src="/assets/share.svg" alt=""></a>
-              </div>
+
+
+          </div>
+          <div class="card">
+            <p class="title">Easy Peasy App</p>
+            <p class="text">
+              Nulla dolore dolor ea consectetur velit est et dolor nostrud
+              enim eiusmod. Officia amet aliqua adipisicing consequat officia.
+              Ad consectetur excepteur id anim. Non reprehenderit eu elit
+              tempor eiusmod laboris excepteur mollit amet do anim anim est.
+              Velit pariatur ut enim pariatur consectetur cupidatat cupidatat
+              anim duis anim. Et irure anim mollit veniam ad pariatur fugiat
+              qui mollit reprehenderit ad. Et velit et ad sit tempor amet
+              irure adipisicing laboris pariatur reprehenderit cillum.
+            </p>
+            <div class="card-btns">
+              <a><img src="/assets/favorite.svg" alt=""></a>
+              <a><img src="/assets/watch.svg" alt=""></a>
+              <a><img src="/assets/share.svg" alt=""></a>
             </div>
-            <div class="card">
-              <p class="title">Ad Blocker</p>
-              <p class="text">
-                Do ea incididunt cupidatat fugiat officia Lorem do. Lorem
-                cupidatat labore nulla eu fugiat deserunt mollit qui veniam
-                occaecat id Lorem consectetur enim. Veniam tempor deserunt magna
-                anim quis culpa quis dolore eiusmod excepteur tempor.
-                Consectetur cupidatat duis labore ipsum nisi exercitation
-                deserunt incididunt occaecat et qui ut nisi. Proident
-                consectetur velit commodo dolore nisi consequat voluptate nulla
-                quis ad consequat veniam cupidatat. Id enim cillum in laborum
-                cupidatat ex et adipisicing sunt magna aute.
-              </p>
-              <div class="card-btns">
-                <a><img src="/assets/favorite.svg" alt=""></a>
-                <a><img src="/assets/watch.svg" alt=""></a>
-                <a><img src="/assets/share.svg" alt=""></a>
-              </div>
-
+          </div>
+          <div class="card">
+            <p class="title">Ad Blocker</p>
+            <p class="text">
+              Do ea incididunt cupidatat fugiat officia Lorem do. Lorem
+              cupidatat labore nulla eu fugiat deserunt mollit qui veniam
+              occaecat id Lorem consectetur enim. Veniam tempor deserunt magna
+              anim quis culpa quis dolore eiusmod excepteur tempor.
+              Consectetur cupidatat duis labore ipsum nisi exercitation
+              deserunt incididunt occaecat et qui ut nisi. Proident
+              consectetur velit commodo dolore nisi consequat voluptate nulla
+              quis ad consequat veniam cupidatat. Id enim cillum in laborum
+              cupidatat ex et adipisicing sunt magna aute.
+            </p>
+            <div class="card-btns">
+              <a><img src="/assets/favorite.svg" alt=""></a>
+              <a><img src="/assets/watch.svg" alt=""></a>
+              <a><img src="/assets/share.svg" alt=""></a>
             </div>
-            <div class="card">
-              <p class="title">Money Maker</p>
-              <p class="text">
-                Cupidatat adipisicing sunt exercitation occaecat eu nostrud
-                minim esse sunt proident laborum Lorem. Mollit fugiat nisi sunt
-                ea velit ut nisi incididunt. Culpa nostrud sit cupidatat aute
-                excepteur officia. Ipsum eiusmod non ullamco ut sit ut.
+
+          </div>
+          <div class="card">
+            <p class="title">Money Maker</p>
+            <p class="text">
+              Cupidatat adipisicing sunt exercitation occaecat eu nostrud
+              minim esse sunt proident laborum Lorem. Mollit fugiat nisi sunt
+              ea velit ut nisi incididunt. Culpa nostrud sit cupidatat aute
+              excepteur officia. Ipsum eiusmod non ullamco ut sit ut.
+            </p>
+            <div class="card-btns">
+              <a><img src="/assets/favorite.svg" alt=""></a>
+              <a><img src="/assets/watch.svg" alt=""></a>
+              <a><img src="/assets/share.svg" alt=""></a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="announcement_trending">
+        <div class="announcements-section">
+          <h2>Announcements</h2>
+          <div class="container">
+            <div class="announcement">
+              <h2>Site Maintenance</h2>
+              <p>
+                Proident mollit voluptate aliquip veniam incididunt elit ullamco
+                cillum dolor aliquip ipsum amet aliquip.
               </p>
-              <div class="card-btns">
-                <a><img src="/assets/favorite.svg" alt=""></a>
-                <a><img src="/assets/watch.svg" alt=""></a>
-                <a><img src="/assets/share.svg" alt=""></a>
-              </div>
-
-
+            </div>
+            <div class="announcement">
+              <h2>Community Share Day</h2>
+              <p>
+                Proident mollit voluptate aliquip veniam incididunt elit ullamco
+                cillum dolor aliquip ipsum amet aliquip. </p>
+            </div>
+            <div class="announcement">
+              <h2>Updated: Privacy Policy</h2>
+              <p>
+                Proident mollit voluptate aliquip veniam incididunt elit ullamco
+                mollit mollit.
+              </p>
             </div>
           </div>
         </div>
+        <div class="trending-section">
+          <h2>Trending</h2>
+          <div class="container">
 
-        <div class="announcement_trending">
-          <div class="announcements-section">
-            <h2>Announcements</h2>
-            <div class="container">
-              <div class="announcement">
-                <h2>Site Maintenance</h2>
-                <p>
-                  Proident mollit voluptate aliquip veniam incididunt elit ullamco
-                  cillum dolor aliquip ipsum amet aliquip. 
-                </p>
-              </div>
-              <div class="announcement">
-                  <h2>Community Share Day</h2>
-                  <p>
-                    Proident mollit voluptate aliquip veniam incididunt elit ullamco
-                    cillum dolor aliquip ipsum amet aliquip.             </p>
-                </div>
-                <div class="announcement">
-                  <h2>Updated: Privacy Policy</h2>
-                  <p>
-                    Proident mollit voluptate aliquip veniam incididunt elit ullamco
-                    mollit mollit.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="trending-section">
-              <h2>Trending</h2>
-              <div class="container">
-                <div class="trending_user">
+            <a href="https://www.freepik.com/free-vector/cute-panda-drinking-boba-milk-tea-cartoon-vector-illustration-animal-food-concept-isolated-vector-flat-cartoon-style_10336151.htm#from_view=detail_alsolike">
+              <div class="trending_user">
+                <img src="/assets/panda.jpg" alt="profile image">
+                <div class="user-info">
                   <h2>Site Maintenance</h2>
                   <p>
-                    Proident mollit voluptate 
+                    Image by catalyststuff / Freepik
                   </p>
                 </div>
-                <div class="trending_user">
-                    <h2>Community Share Day</h2>
-                    <p>
-                      Proident mollit voluptate 
-                  </div>
-                  <div class="trending_user">
-                    <h2>Updated: Privacy Policy</h2>
-                    <p>
-                      Proident mollit voluptate 
-                    </p>
-                  </div>
+              </div>
+            </a>
+
+
+            <a href="https://www.freepik.com/free-vector/cute-panda-drinking-boba-milk-tea-cartoon-vector-illustration-animal-food-concept-isolated-vector-flat-cartoon-style_10336151.htm#from_view=detail_alsolike">
+              <div class="trending_user">
+                <img src="/assets/girl-gamer.jpg" alt="profile image">
+                <div class="user-info">
+                  <h2>catalyststuff</h2>
+                  <p>
+                    Image by catalyststuff / Freepik
+                  </p>
                 </div>
-              </div> 
-       </main>
+
+              </div>
+              </a>
+
+
+             <a href="https://www.freepik.com/free-vector/cute-panda-drinking-boba-milk-tea-cartoon-vector-illustration-animal-food-concept-isolated-vector-flat-cartoon-style_10336151.htm#from_view=detail_alsolike">
+              <div class="trending_user">
+                <img src="/assets/grape.jpg" alt="profile image">
+                <div class="user-info">
+                  <h2>catalyststuff</h2>
+                  <p>
+                    Image by catalyststuff / Freepik
+                  </p>
+                </div>
+
+              </div>
+              </a>
+
+          </div>
         </div>
-    </div>
-  </body>
+    </main>
+  </div>
+  </div>
+</body>
+
 </html>
