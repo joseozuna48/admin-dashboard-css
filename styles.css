@@ -107,14 +107,12 @@ nav i img{
     height: auto;
 }
 
-
-.right-section{
-    padding:1rem
-}
-
 .search_and_info{
     display: grid;
     gap: 3rem;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 10px -5px 8px 6px rgb(0,0,0,0.5);
 }
 
 .search_section{
@@ -132,6 +130,10 @@ nav i img{
     justify-content: space-evenly;
 }
 
+.right-section{
+  background-color: #fff7ed;
+}
+
 main{
     display: grid;
     grid-template-columns: 5fr 2fr;
@@ -147,6 +149,34 @@ main{
 
 .cards-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap:1.5rem;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr) );
+    gap:2rem;
+    margin-top: 1rem;
+}
+
+.card{
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 1px rgb(0,0,0,0.5),inset 28px 0px 0px -15px #166534;
+  overflow: hidden;
+
+  display: grid;
+}
+
+.card .title{
+  font-weight: bold;
+}
+
+.card-btns{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  justify-self: end;
+  align-self: end;
+}
+
+.card a img{
+  width:1.5rem;
+  height: auto;
 }
