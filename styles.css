@@ -109,25 +109,89 @@ nav i img{
 
 .search_and_info{
     display: grid;
-    gap: 3rem;
     background-color: white;
-    padding: 2rem;
+    padding: 1rem 2rem;
     box-shadow: 10px -5px 8px 6px rgb(0,0,0,0.5);
 }
 
-.search_section{
+.search-and-profile{
     display:grid;
-    grid-template-columns: 5fr 1fr 1fr;
+    grid-template-columns: 5fr minmax(290px,2fr);
     gap: 2rem;
 }
+
+.search-section{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: start;
+  align-content: center;
+}
+.search-section button{
+  height: auto;
+  background: none;
+  border: none;
+  justify-self: stretch;
+}
+.search-section img{
+  width: 30px;
+  height: auto;
+}
+
+.profile-section{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap:2rem;
+  align-items: center;
+  justify-self: center;
+}
+
+.bell{
+  width: 30px;
+  height: auto;
+}
+
+.profile-btn{
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: grid ;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.profile-btn img{
+  width: 90px;
+  height: auto;
+}
+
+.greeting-section{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap:1rem;
+}
+
+.greeting-section p{
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.greeting-section img{
+  width: 100px;
+  height: auto;
+}
+
  .info_section{
     display: grid;
     grid-template-columns: 5fr 2fr;
  }
 
 .info_section .button-section{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .right-section{
@@ -136,7 +200,7 @@ nav i img{
 
 main{
     display: grid;
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: 5fr minmax(340px,2fr);
 }
 
 .project-section{
@@ -212,4 +276,36 @@ main{
   font-weight: bold;
   font-size: 1rem;
 }
+
+.trending_user{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
+
+
+.user-info{
+  display: grid;
+}
  
+
+.trending_user img{
+  width: 90px;
+  height: auto;
+}
+ 
+.button-section button{
+  border-radius: 30px;
+  background-color: var(--main-color);
+  padding: 8px 25px;
+  border: none;
+  font-weight: bold;
+}
+
+#searchBar{
+  max-width: 850px;
+    border-radius: 1rem;
+    border: 1px solid #E2E8F0;
+    background-color: #E2E8F0;
+    padding-left: 1rem;
+}
